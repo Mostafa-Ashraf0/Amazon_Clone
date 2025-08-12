@@ -1,6 +1,6 @@
 # Amazon Clone (React.js)
 A modern web application inverted from amazon contains most important features like shopping cart , Orders page , checkout.
-<div style = "display:flex; gap:10px;">
+<div style = "display:flex; gap:10px; margin-bottom:20px;">
   <img src="login.amazon.PNG" alt="login Screenshot" width="30%" height = "auto">
   <img src="home.amazon.PNG" alt="home Screenshot" width="30%" height = "auto">
   <img src="cart.amazon.PNG" alt="cart Screenshot" width="30%" height = "auto">
