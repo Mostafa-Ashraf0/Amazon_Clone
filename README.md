@@ -8,5 +8,5 @@ A modern web application inverted from amazon contains most important features l
   <img src="products.amazon.PNG" alt="products Screenshot" width="30%" height = "auto">
   <img src="product.amazon.PNG" alt="product Screenshot" width="30%" height = "auto">
 </div>
-<img src="component.drawio.png" alt="product Screenshot" width="200px" height = "100px">
+<img src="component.drawio.png" alt="product Screenshot" width="50%" height = "auto">
 
