@@ -1,0 +1,15 @@
+.orders-body{
+    color: black;
+    padding: 30px;
+}
+
+.orders-body h1{
+    margin-bottom: 20px;
+}
+
+.orders{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

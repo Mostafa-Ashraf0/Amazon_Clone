@@ -1,0 +1,38 @@
+.item{
+    width: 100%;
+    display: flex;
+    gap:20px;
+    padding: 20px 30px;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+}
+
+.item .text1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.text1 h2{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.text1 .price{
+    font-size: 22px;
+}
+
+.text1 .rate{
+    font-size: 15px;
+}
+
+.text1 .inner{
+    font-size: 17px;
+}
+
+.item img{
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+}

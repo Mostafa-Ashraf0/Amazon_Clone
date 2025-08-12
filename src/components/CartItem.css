@@ -1,0 +1,60 @@
+.item{
+    width: 100%;
+    display: flex;
+    gap:20px;
+    padding: 20px 30px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.item .text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.text h2{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.text .price{
+    font-size: 22px;
+}
+
+.text .rate{
+    font-size: 15px;
+}
+
+.text .inner{
+    font-size: 17px;
+}
+
+.items .item img{
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+}
+
+.delete{
+    border-radius: 0;
+    width: 150px;
+    border: 1px solid #adb1b8;
+    color: #000;
+    padding: 10px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #f0c14b;
+}
+
+.text select{
+    border-radius: 50px;
+    color: #111;
+    width: 200px;
+    padding: 8px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    background-color: white;
+}

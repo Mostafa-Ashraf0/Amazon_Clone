@@ -1,0 +1,22 @@
+.checkout{
+    width: 100%;
+    color:black;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    gap: 10px;
+}
+
+
+.checkout button{
+    border-radius: 0;
+    width:100%;
+    border: 1px solid #222324;
+    color: #000;
+    padding: 10px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #f0c14b;
+}
