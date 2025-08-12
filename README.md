@@ -1,10 +1,12 @@
 # Amazon Clone (React.js)
 A modern web application inverted from amazon contains most important features like shopping cart , Orders page , checkout.
-<img src="login.amazon.PNG" alt="login Screenshot" width="600" height = "auto">
-<img src="home.amazon.PNG" alt="home Screenshot" width="600" height = "auto">
-<img src="cart.amazon.PNG" alt="cart Screenshot" width="600" height = "auto">
-<img src="orders.amazon.PNG" alt="orders Screenshot" width="600" height = "auto">
-<img src="products.amazon.PNG" alt="products Screenshot" width="600" height = "auto">
-<img src="product.amazon.PNG" alt="product Screenshot" width="600" height = "auto">
+<div style = "display:flex; gap:10px;">
+  <img src="login.amazon.PNG" alt="login Screenshot" width="30%" height = "auto">
+  <img src="home.amazon.PNG" alt="home Screenshot" width="30%" height = "auto">
+  <img src="cart.amazon.PNG" alt="cart Screenshot" width="30%" height = "auto">
+  <img src="orders.amazon.PNG" alt="orders Screenshot" width="30%" height = "auto">
+  <img src="products.amazon.PNG" alt="products Screenshot" width="30%" height = "auto">
+  <img src="product.amazon.PNG" alt="product Screenshot" width="30%" height = "auto">
+</div>
 
 
