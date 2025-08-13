@@ -14,5 +14,11 @@ A Frontend project which contains most important features like shopping cart , O
 
 ## Features
 
-  - **Login:** Login UI (no authentication → takes user to the home page or user can continue as a guest).
-  - **Add to cart:** User can add product to cart from the home page which contains all products or from the product page which contains all details about the product.
+  - **Login :** Login UI (no authentication → takes user to the home page or user can continue as a guest).
+  - **Add to cart :** User can add product to cart from the home page which contains all products or from the product page which contains all details about the product.
+  - **Header :** which contains user info and navigate user to another pages like cart and orders.
+  - **Cart :** contains all products that user choosed with all information like image , title , price and quantity which is dynamic and user can control it.
+  - **Delete from cart :** user can use this button to delete prduct from cart as needed.
+  - **Control Quantity :** user can control quantity of each product in the cart or before added it from products page which leads to change the price of the product depending on the quantity.
+  - **Orders page :** which contains all orders that user placed each product has and id and all details like product , quantity of each product and subtotal.
+  - **Scroll to top ** button for easy navigation.
