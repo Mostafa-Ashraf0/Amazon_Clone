@@ -25,5 +25,6 @@ A Frontend project which contains most important features like shopping cart , O
 
 ## :computer: Technology Stack
 <div>
-  <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/react.png" alt="javascript" width="24%" height = "auto">
+  <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/react.png" alt="reactjs" width="100px" height = "auto">
+  <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/javascript.png" alt="javascript" width="100px" height = "auto">
 </div>
