@@ -21,4 +21,4 @@ A Frontend project which contains most important features like shopping cart , O
   - **:heavy_minus_sign: Delete from cart :** user can use this button to delete prduct from cart as needed.
   - **:heavy_multiplication_x: Control Quantity :** user can control quantity of each product in the cart or before added it from products page which leads to change the price of the product depending on the quantity.
   - **:bookmark_tabs: Orders page :** which contains all orders that user placed each product has and id and all details like product , quantity of each product and subtotal.
-  - **:arrow_double_up: Scroll to top ** button for easy navigation.
+  - **:arrow_heading_up: Scroll to top :** button for easy navigation.
