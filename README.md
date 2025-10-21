@@ -32,3 +32,5 @@ A Frontend project which contains most important features like shopping cart , O
   <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/node_js.png" alt="nodejs" width="100px" height = "auto">
   <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/vite.png" alt="vite" width="100px" height = "auto">
 </div>
+
+<span>Live Demo: https://amazon-clone-sage-eta.vercel.app/</span>
