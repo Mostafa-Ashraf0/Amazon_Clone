@@ -1,0 +1,35 @@
+.main{
+    width: 100%;
+    color: black;
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+    background-color: white;
+}
+
+.main .left{
+    width: 70%;
+}
+
+.left .ad{
+    width: 100%;
+    object-fit: contain;
+}
+
+.left .items{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.left hr{
+    margin-bottom: 20px;
+}
+
+.main .right{
+    width: 30%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}

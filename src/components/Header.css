@@ -1,0 +1,215 @@
+#root{
+  width: 100%;
+  --mainColor : hsl(214, 27%, 10%);
+}
+
+Header{
+    height: 65px;
+    background-color: var(--mainColor);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    gap: 10px;
+}
+
+Header a {
+    height: 100%;
+}
+
+Header .img{
+    height: 100%;
+    display: flex;
+    padding: 0 10px;
+}
+
+Header img {
+  height: 35px;
+  width: auto;
+}
+
+Header .location {
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.location .deliver-to{
+    font-size: 0.8rem;
+    color: #fff;
+    padding-left: 35px;
+    color: #ccc;
+}
+
+.country{
+    font-size: 1rem;
+    color: #fff;
+    margin-top: -5px;
+}
+
+.country i{
+    font-size: 1.4rem;
+    margin-right: 5px;
+}
+
+.hover-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid transparent;
+}
+
+.hover-box:hover {
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.search{
+    height: 80%;
+    width: 52%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.search input{
+    width: 87%;
+    height: 100%;
+    background-color: white;
+    border: solid white;
+    padding-left: 10px;
+    color: black;
+    font-size: 18px;
+}
+.search input:focus{
+    outline: none;
+}
+
+.search .drop-down,
+.icon{
+    
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.search .drop-down{
+    width: 8%;
+    background-color: #ccc;
+    color: black;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.search .icon{
+    width: 7%;
+    background-color: #febd69;
+    color: var(--mainColor);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.search .icon i{
+    font-size: 0.9em;
+}
+
+.right .language,
+.right .account,
+.right .orders{
+    height: 100% ;
+    display: flex;
+    align-items:end;
+    justify-content: flex-end;
+    gap: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+
+.language img{
+    width: 30px;
+    height: 22px;
+}
+
+.language span{
+    font-size: 15px;
+    color:white;
+    padding: 0;
+    margin: 0;
+}
+
+.account{
+    gap: 0;
+    flex-direction: column;
+    align-items:flex-start;
+    line-height: 0.7em;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.account .hello{
+    font-size: 13px;
+    color: white;
+}
+
+.account .A-L{
+    font-size: 16px;
+    color: white;
+}
+
+.orders{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.orders .orders-box{
+    font-size: 16px;
+    color:white;
+}
+
+.cart{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+    border: 1px solid transparent;
+    padding: 0 5px;
+}
+
+.cart .cart-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cart .cart-icon i{
+    font-size: 25px;
+}
+
+
+
+.cart span{
+    font-size: 15px;
+}
+
+.right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+}
+
+.cart-icon span{
+    color: #febd69;
+    font-size: 18px;
+}

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:5173/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="./Vite + React_files/client"></script>
+
+    
+    <link rel="icon" type="image/svg+xml" href="http://localhost:5173/vite.svg">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="./Vite + React_files/all.min.css" integrity="sha512-...==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite + React</title>
+  <style type="text/css" data-vite-dev-id="C:/Users/mosta/OneDrive/Desktop/Amazon-Clone/src/index.css">:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/mosta/OneDrive/Desktop/Amazon-Clone/src/App.css">/* App.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/mosta/OneDrive/Desktop/Amazon-Clone/src/components/Header.css">#root{
+  width: 100%;
+  --mainColor : #131921;
+}
+
+Header{
+    height: 65px;
+    background-color: var(--mainColor);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    gap: 10px;
+}
+
+
+Header .img{
+    display: flex;
+    padding: 0 10px;
+}
+
+Header img {
+  height: 35px;
+  width: auto;
+}
+
+Header .location {
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.location .deliver-to{
+    font-size: 0.8rem;
+    color: #fff;
+    padding-left: 35px;
+    color: #ccc;
+}
+
+.country{
+    font-size: 1rem;
+    color: #fff;
+    margin-top: -5px;
+}
+
+.country i{
+    font-size: 1.4rem;
+    margin-right: 5px;
+}
+
+.hover-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid transparent;
+}
+
+.hover-box:hover {
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.search{
+    height: 80%;
+    width: 52%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.search input{
+    width: 87%;
+    height: 100%;
+    background-color: white;
+    border: solid white;
+    padding-left: 10px;
+    color: black;
+    font-size: 18px;
+}
+
+.search .drop-down,
+.icon{
+    
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.search .drop-down{
+    width: 8%;
+    background-color: #ccc;
+    color: black;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.search .icon{
+    width: 7%;
+    background-color: #febd69;
+    color: var(--mainColor);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.search .icon i{
+    font-size: 0.9em;
+}
+
+.language,
+.account,
+.orders{
+    height: 100%;
+    display: flex;
+    align-items:end;
+    justify-content: flex-end;
+    gap: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+
+.language img{
+    width: 30px;
+    height: 22px;
+}
+
+.language span{
+    font-size: 15px;
+    color:white;
+    padding: 0;
+    margin: 0;
+}
+
+.account{
+    gap: 0;
+    flex-direction: column;
+    align-items:flex-start;
+    line-height: 0.7em;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.account .hello{
+    font-size: 13px;
+    color: white;
+}
+
+.account .A-L{
+    font-size: 16px;
+    color: white;
+}
+
+.orders{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.orders span{
+    font-size: 16px;
+    color:white;
+}
+
+.cart{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+    border: 1px solid transparent;
+    padding: 0 5px;
+}
+
+.cart .cart-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cart .cart-icon i{
+    font-size: 25px;
+}
+
+
+
+.cart span{
+    font-size: 15px;
+}
+
+.right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+}
+
+.cart-icon span{
+    color: #febd69;
+    font-size: 18px;
+}</style></head>
+  <body>
+    <div id="root"><header><a href="http://localhost:5173/" data-discover="true"><div class="img hover-box"><img alt="" src="./Vite + React_files/Amazon_logo_white.png"></div></a><div class="location hover-box"><span class="deliver-to">Deliver to</span><span class="country"><i class="fa-solid fa-location-dot"></i>Egypt</span></div><div class="search"><div class="drop-down"><select name="drop-down" id="drop-down" fdprocessedid="9gukc"><option value="All" disabled="">All</option></select></div><input placeholder="Search Amazon.eg" type="input" fdprocessedid="2ud3o8"><div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div></div><div class="right"><div class="language hover-box"><img alt="" src="./Vite + React_files/egypt-flag-png-xl.png"><span>EN</span></div><a href="http://localhost:5173/login" data-discover="true"><div class="account hover-box"><span class="hello">Hello, sign in</span><span class="A-L">Acount &amp; Lists</span></div></a><a href="http://localhost:5173/orders" data-discover="true"><div class="orders hover-box"><span>Orders</span></div></a><a href="http://localhost:5173/cart" data-discover="true"><div class="cart hover-box"><div class="cart-icon"><span>0</span><i class="fa-solid fa-cart-shopping"></i></div><span>Cart</span></div></a></div></header></div>
+    <script type="module" src="./Vite + React_files/main.jsx"></script>
+  
+
+<span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span></body></html>
