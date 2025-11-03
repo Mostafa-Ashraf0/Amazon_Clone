@@ -1,23 +1,31 @@
 import { Link } from "react-router-dom";
 import "./Login.css"
+import { Signin } from "../features/signin";
+import { useRef } from "react";
 import { useAuth } from "../context/GlobalState";
 export default function Login(){
-    const {dispatch, user , password} = useAuth();
+    const {dispatch} = useAuth();
+    const emailRef = useRef();
+    const passwordRef = useRef();
 
-    //dispatch Methods
-    const setUser = (e)=>{
-        dispatch({type:"Set_User", user:e.target.value})
-    }
-    const setPassword = (e)=>{
-        dispatch({type:"Set_Password", password:e.target.value})
+    const handleSignin = async(e)=>{
+        e.preventDefault();
+        const userData = {
+        email: emailRef.current.value,
+        password: passwordRef.current.value
+    }   
+        try{
+            const loggedUser = await Signin(userData.email, userData.password);
+            if(loggedUser){
+                dispatch("Set_User",loggedUser.email);
+                localStorage.setItem("logged",true);
+                localStorage.setItem("user",loggedUser.email)
+            }
+        }catch(err){
+            console.log(err);
+        }
     }
 
-    //set data in localStorage
-    const setLocalStorage = ()=>{
-        localStorage.setItem("user",user);
-        localStorage.setItem("password",password)
-    }
-    
     return(
         <div className="login">
             <Link to="/">
@@ -25,14 +33,12 @@ export default function Login(){
             </Link>
             <div className="login-form">
                 <h1>Sign in</h1>
-                <form>
+                <form onSubmit={handleSignin}>
                     <h5>Email</h5>
-                    <input type="text" value={user} onChange={setUser} required/>
+                    <input type="text" ref={emailRef} required/>
                     <h5>Password</h5>
-                    <input type="password" value={password} onChange={setPassword} required/>
-                    <Link to={user && password?"/":"/login"}>
-                        <button type="button" className="login-btn" onClick={setLocalStorage}>sign in</button>
-                    </Link>
+                    <input type="password" ref={passwordRef} required/>
+                        <button type="submit" className="login-btn">sign in</button>
                     <p>By continuing, you agree to Amazon's Conditions of Use and Privacy Notice.</p>
                     <button type="button" className="signup-btn" >create an account</button>
                 </form>

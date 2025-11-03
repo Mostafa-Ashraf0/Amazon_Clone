@@ -19,7 +19,9 @@ export default function GlobalProvider({children}){
         dispatch:dispatch,
         fetchedProducts:fetched,
         value:state.value,
-        orderValue:state.orderValue}}>{children}
+        orderValue:state.orderValue,
+        }}>
+            {children}
         </GlobalContext.Provider>
 }
 

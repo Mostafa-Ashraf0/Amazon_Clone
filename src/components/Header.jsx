@@ -1,14 +1,28 @@
 import './Header.css';
-import {useAuth} from "../context/GlobalState"
+import {useAuth} from "../context/GlobalState";
+import { logout } from '../features/signout';
 import { Link } from "react-router-dom";
 import logo from '../assets/images/Amazon_logo_white.png';
+import { useEffect, useState } from 'react';
 export default function Header() {
     const {basket} = useAuth();
-    const userName = localStorage.getItem("user");
-    const handleAuth = ()=>{
-        if(userName){
-            localStorage.removeItem("user");
-            localStorage.removeItem("password");
+    const [user, setUser] = useState(null);
+    const [logged, setLogged] = useState(false);
+    useEffect(()=>{
+        const userName = localStorage.getItem("user");
+        const loggedValue = localStorage.getItem("logged") === "true" //convert string value to bool;
+        setUser(userName);
+        setLogged(loggedValue);
+    },[])
+    const handleSignout = async()=>{
+        try{
+            await logout();
+            localStorage.setItem("logged",false);
+            localStorage.setItem("user","");
+            setUser(null);
+            setLogged(false);
+        }catch(err){
+            console.log(err);
         }
     }
     return (
@@ -36,9 +50,9 @@ export default function Header() {
                         <span>EN</span>
                     </div>
                 <Link to="/login">
-                    <div className="account hover-box" onClick={handleAuth}>
-                        <span className='hello'>Hello, {userName!==null?userName:"Guest"}</span>
-                        <span className='A-L'>{userName?"Sign Out":"Sign In"}</span>
+                    <div className="account hover-box" onClick={handleSignout}>
+                        <span className='hello'>Hello, {logged?user:"guest"}</span>
+                        <span className='A-L'>{logged?"Sign Out":"Sign In"}</span>
                     </div>
                 </Link>
                 <Link to="/orders">

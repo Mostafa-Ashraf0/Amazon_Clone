@@ -1,3 +1,4 @@
+
 const cartData = JSON.parse(localStorage.getItem("basket")) || [];
 const ordersData = JSON.parse(localStorage.getItem("orders")) || [];
 const storageValue = JSON.parse(localStorage.getItem("value")) || [];
@@ -7,7 +8,8 @@ export const initialState = {
     user : null,
     orders: ordersData,
     value: storageValue,
-    orderValue : storageOrderValue
+    orderValue : storageOrderValue,
+    logged: false
 }
 
 export default function AppReducer(state = initialState, action){
@@ -42,6 +44,7 @@ export default function AppReducer(state = initialState, action){
                 ...state,
                 orderValue : action.orderValue
             }
+        
         default:
             return state;
     }
